@@ -56,7 +56,7 @@ class Empleado {
 
             // Validacion
             if(!$res){
-                return null;
+                return ["estado" => "error", "mensaje" => "No se ha encontrado el empleado con el id: " . $id];
             }else {
                 // Array para guardar el empleado
                 $emp = [
